@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and(max-width:1150px)" href="css/phone.css">
+    <title>Document</title>
+    <style>
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    #navbar{
+    display: flex;
+    align-items: center;
+    top: 0px;
+    position: relative;
+    }
+    #navbar{
+    position: sticky;
+    }
+    #navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    }
+    #logo{
+    display: flex;
+    margin: 0px;
+    }
+    #logo img{
+    height: 100px;
+    width: 150px;
+    }
+    #navbar ul{
+    display: flex;
+    }
+    #navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    }
+    #navbar ul li a{
+    color: white;
+    display: block;
+    padding: 19px 94px;
+    border-radius: 20px;
+    text-decoration: none;
+    }
+    #navbar ul li a:hover{
+    background: black;
+    }
+    #home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    }
+    #home img{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        top: 17%;
+    }
+    #home h1{
+        text-align: center;
+    }
+    .one{
+        font-size: 2.8rem;
+        padding: 15px;
+        font-family: cursive;
+    }
+    #home p{
+        font-size: 1.5rem;
+        font-family: cursive;
+        color: red;
+        font-weight: 1.5rem;
+    }
+    .btn{
+        padding: 6px 20px;
+        border: 2px solid brown;
+        background-color: brown;
+        color:white;
+        border-radius: 30px;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+    .btn:hover{
+        box-shadow: 2px 3px 3px darkred;
+    }
+    footer{
+        background-color: black;
+        color: white;
+        padding: 20px 30px;
+        text-align: center;
+        margin-top: 90px;
+    }
+</style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="kinnaur.jpg" alt="Travel to Kinnaur">
+            <ul>
+                <li class="item"><a href="home.html">Home</a></li>
+                <li class="item"><a href="about.html">About</a></li>
+                <li class="item"><a href="visit.html">How to Visit</a></li>
+                <li class="item"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="home">
+        <img src="background.jpg" alt="Travel to Kinnaur">
+        <h1 class="one">Welcome To Our Travel Agency</h1>
+        <p>Amongst dizzy Himalayan heights Kinnaur, once a forbidden land ,is now a treasure's trove for the daring and adventurers seekeers.
+            From the righteous greens pf Sangla valley with the well developed orchads of apricots and apples, to the magnificent panorama of
+            Chitkul,India's last village on Indo -Tibet border,and from the stunning sight of Mt.Kinner Kailash ,abode of Lord Lying on the ancient 
+            trade route between and Tibet,ringed by the majestic Himalayan ,Zanskar, and Dhauladhar ranges,Kinnaur with its well conserved culture and 
+            timeless rituals is a land of plenty.</p>
+        <button class="btn">Book Now</button>
+    </section>
+
+    <footer>
+        <div>
+            Copyright &copy; www.travelAgency.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+</html>

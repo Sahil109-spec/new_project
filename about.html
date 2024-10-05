@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+      margin: 0px;
+      padding: 0px;
+    }
+    #navbar{
+    display: flex;
+    align-items: center;
+    top: 0px;
+    position: sticky;
+    }
+    #navbar{
+    position: sticky;
+    }
+    #navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    }
+    #logo{
+    display: flex;
+    margin: 0px;
+    }
+    #logo img{
+    height: 100px;
+    width: 150px;
+    }
+    #navbar ul{
+    display: flex;
+    }
+    #navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    }
+    #navbar ul li a{
+    color: white;
+    display: block;
+    padding: 19px 94px;
+    border-radius: 20px;
+    text-decoration: none;
+    }
+    #navbar ul li a:hover{
+    background: black;
+    }
+    .about #one{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        opacity: 0.2;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        top: 16%;
+    }
+    .h-primary{
+        font-size: 2.8rem;
+        padding: 12px;
+        color: red;
+        text-shadow: 2px 3px 3px black;
+    }
+    #two{
+        margin-left: 40%;
+    }
+    h2{
+        font-variant: small-caps;
+        font-size: 1.8rem;
+        color: darkred;
+        text-align: justify;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #hello{
+        margin-left: 40%;
+    }
+    footer{
+        background-color: black;
+        color: white;
+        padding: 20px 30px;
+        text-align: center;
+        margin-top: 100px;
+    }
+    </style>
+</head>
+<body>
+        <nav id="navbar">
+            <div id="logo">
+                <img src="kinnaur.jpg" alt="Travel to Kinnaur">
+                <ul>
+                    <li class="item"><a href="home.html">Home</a></li>
+                    <li class="item"><a href="about.html">About</a></li>
+                    <li class="item"><a href="visit.html">How to Visit</a></li>
+                    <li class="item"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    <section class="about">
+        <div>
+            <img id="one"src="lord4.jpg" alt="">
+            <h1  class="h-primary"><marquee>ABOUT US</marquee></h1>
+            <img id="two"src="weather.png" alt="kinnaur">
+            <h2>Till 19<sup>th</sup>century, Tourism in Himachal Pradesh was restricted only to alimited movement of pilgrims to a few spiritual destinations in around the hills.Only when the british established their chain of hill stations did tourism recieve recognition in the state. Tourism activity recieved a shot in the arm when British declared Shimla. The Summer Capital of India in 1864 post independence ,more investment in the infrastucture sector led to opening up of tourism in the state.However the biggest boost to tourism occured in the mid 80s and 90s.</h2><br>
+        </div>
+    </section>
+    <section class="about_1">
+        <img id="hello"src="lord4.jpg">
+        <h2>While traditionally Himachal was known as a summer destination,the department of Tourism & civil aviation has taken special efforts to break the sesonality factor and has develop diversified tourism products to attract tourists in other seasons too. Now Himachal is known as "A destination for all seasons and all reasons". In fact, the department has laid a special emphasis on the development of activity-based tourism and opening up of new sub destinations.</h2>
+    </section>
+
+    <footer>
+        <div>
+            Copyright &copy; www.travelAgency.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+</html>

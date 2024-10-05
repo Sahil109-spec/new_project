@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    #grid{
+        width: 100%;
+        height: 100%;
+        background-color: red;
+        background-image: repeating-linear-gradient(red,yellow ,green );
+    }
+    #navbar{
+    display: flex;
+    align-items: center;
+    top: 0px;
+    position: sticky;
+    }
+    #navbar{
+    position: sticky;
+    }
+    #navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    }
+    #logo{
+    display: flex;
+    margin: 0px;
+    }
+    #logo img{
+    height: 100px;
+    width: 150px;
+    }
+    #navbar ul{
+    display: flex;
+    }
+    #navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    }
+    #navbar ul li a{
+    color: white;
+    display: block;
+    padding: 19px 94px;
+    border-radius: 20px;
+    text-decoration: none;
+    }
+    #navbar ul li a:hover{
+    background: black;
+    }
+    p{
+         text-align: center;
+         font-size: 1.3rem;    
+         font-family: cursive;
+         font-variant: small-caps;
+         color: darkred;
+    }
+    #hello{
+        text-align: center;
+        font-size: 2.8rem;
+        text-shadow: 2px 2px 3px red;
+        color: black;
+    }
+    table{
+        margin-left: 40%;
+        box-shadow: 4px 4px 3px darkblue;
+    }
+    tr:hover{
+        background-color: lightblue;
+    }
+    td{
+        padding: 20px;
+    }
+    #two{
+        text-align: center;
+        padding: 5px;
+        color: red;
+    }
+    #three{
+        background-color: red;
+        color: yellow;
+        padding: 7px;
+        border-radius: 50px;
+    }
+    footer{
+        background-color: black;
+        color: white;
+        padding: 20px 30px;
+        text-align: center;
+        margin-top: 100px;
+    }
+    </style>
+</head>
+<body id="grid">
+    <nav id="navbar">
+        <div id="logo">
+            <img src="kinnaur.jpg" alt="Travel to Kinnaur">
+            <ul>
+                <li class="item"><a href="home.html">Home</a></li>
+                <li class="item"><a href="about.html">About</a></li>
+                <li class="item"><a href="visit.html">How to Visit</a></li>
+                <li class="item"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="cnt">
+        <p>We’re here to help you take the next step in maintainig your life so good with great experience!  Whether you have questions about our programs, need more information, or want to schedule a visit, we’d love to hear from you. <br>
+            Our team is dedicated to providing the support and guidance you need to succeed. Reach out to us through the form below, or give us a call . We believe in open communication and are committed to answering all <br>
+            your queries promptly. Let’s connect and start having fun and explore all over the Himachal espeacially Kinnaur-The Lord Area. Together, we can make your dreams a reality."</p>
+            <form>
+                <h1 id="hello">Contact form</h1>
+                    <table>
+                        <tr>
+                            <td colspan="1"><label>Name</label></td>
+                            <td colspan="1"><input type="nm"name="enter your name"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="1"><label>Email</label></td>
+                            <td colspan="1"><input type="email"name="em"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="1"><label>Feedback</label></td>
+                            <td colspan="1"><textarea name="fd"></textarea></td>
+                        </tr>
+                        <tr id="two">
+                            <td colspan="2"><input id="three"type="submit"name="btn"value="submit"></td>
+                        </tr>
+                    </table>
+                </form>
+    </section>
+
+    <footer>
+        <div>
+            Copyright &copy; www.travelAgency.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+
+</html>
